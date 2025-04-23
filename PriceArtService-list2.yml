@@ -1,0 +1,31 @@
+#Application Config
+application:
+  listino: 2
+
+# = Actuator Parameters
+
+management:
+  info:
+    env:
+      enabled: true
+    git:
+      enabled: true
+      mode: full
+  endpoint:
+    health:
+      show-details: WHEN_AUTHORIZED
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+# = Actuator info
+info:
+  assistenza:
+    nome: Andrea Colone
+    mail: acolone@gmail.com
+    telefono: 3337813236
+    orario: 9-20
+  nome:
+    nome-app: PriceArt Web Service - Autenticazione OAUTH2 keycloack
+  profilo: GitHub
