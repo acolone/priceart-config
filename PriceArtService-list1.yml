@@ -1,6 +1,7 @@
 #Application Config
 application:
   listino: 1
+  sconto: 2
 
 # = Actuator Parameters
 
@@ -29,3 +30,4 @@ info:
   nome:
     nome-app: PriceArt Web Service - Autenticazione OAUTH2 keycloack
   profilo: GitHub
+  variante: promo
