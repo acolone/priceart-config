@@ -1,9 +1,11 @@
 #Application Config
 application:
   listino: 100
-
+  sconto: 10
+  
+# ==============================================================
 # = Actuator Parameters
-
+# ==============================================================
 management:
   info:
     env:
@@ -17,9 +19,11 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,metrics
+        include: health,info,metrics,refresh,bus-refresh
 
-# = Actuator info
+# ==============================================================
+# = Actuator Info
+# ==============================================================
 info:
   assistenza:
     nome: Andrea Colone
